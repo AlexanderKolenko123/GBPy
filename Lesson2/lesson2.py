@@ -1,11 +1,10 @@
 #Задание 2-1
-
+#**************************************************************************************
 testList = [123, 'test', 'four', 1 > 3, 2.5]
 for elem in testList:
     print(type(elem))
 
 #Задание 2-2
-
 elemCount = int(input('Insert element list count'))
 tempList = []
 iterator = 0
@@ -19,11 +18,11 @@ if len(tempList) % 2 != 0:
     tempList[:-1:2], tempList[1:-1:2] = tempList[1:-1:2], tempList[:-1:2]
 else:
     tempList[::2], tempList[1::2] = tempList[1::2], tempList[::2]
-
 print(tempList)
+#**************************************************************************************
 
 #Задание 2-3
-
+#**************************************************************************************
 month = int(input('Insert number of month'))
 monthList = ['winter', 'spring', 'summer', 'autumn']
 monthDict = {1: 'winter', 2: 'spring', 3: 'summer', 4: 'autumn'}
@@ -42,9 +41,10 @@ elif month == 9 or month == 10 or month == 11:
     print(monthDict.get(4))
 else:
     print('No month found')
+#**************************************************************************************
 
 #Задание 2-4
-
+#**************************************************************************************
 tempStr = input('Insert some words separated via space')
 tempDict = {}
 for i in range(len(tempStr.split())):
@@ -54,9 +54,10 @@ for i in range(len(tempStr.split())):
     else:
         tempDict[i] = tempWord[i][:10]
 print(tempDict)
+#**************************************************************************************
 
 #Задание 2-5
-
+#**************************************************************************************
 tempList = [7, 5, 3, 3, 2]
 print(tempList)
 tempVal = int(input("Insert numbers from 0 to 100 and 101 for exit "))
@@ -65,10 +66,10 @@ while tempVal != 101:
     tempList.sort(reverse=1)
     print(tempList)
     tempVal = int(input("Insert numbers from 0 to 100 and 101 for exit "))
-
+#**************************************************************************************
 
 # Задание 2-6
-
+#**************************************************************************************
 goodsStructure = []
 goodsNum = 0
 goodsParams = {'name': '', 'price': '', 'quantity': '', 'units': ''}
@@ -97,6 +98,4 @@ while True:
         print(goodsStructure)
     else:
         print('Incorrect input')
-
-
-
+# **************************************************************************************
