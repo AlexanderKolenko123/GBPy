@@ -1,12 +1,12 @@
-# Задание 4-1
-# **************************************************************************************
-
 from sys import argv
 import random
 from functools import reduce
 from itertools import count
 from itertools import cycle
 from math import factorial
+
+# Задание 4-1
+# **************************************************************************************
 
 name, time, salary, extraBonus = argv
 try:
